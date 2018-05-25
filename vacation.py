@@ -14,3 +14,20 @@ def plane_ride_cost(city):
   else:
     return "unknown"
     
+def rental_car_cost(days):
+  base_cost = 40 * days
+  if days >= 7:
+    base_cost -= 50
+  elif days >= 3:
+    base_cost -= 20
+
+def double(n):
+  return n * 2
+
+def spending_money(money):
+  return money
+
+def trip_cost(city, days, spending_money):
+  return plane_ride_cost(city) + rental_car_cost(days) + spending_money + hotel_costs(days)
+
+print trip_cost("Los Angeles", 5, 600)
