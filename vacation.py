@@ -31,3 +31,6 @@ def trip_cost(city, days, spending_money):
   return plane_ride_cost(city) + rental_car_cost(days) + spending_money + hotel_costs(days)
 
 print trip_cost("Los Angeles", 5, 600)
+
+print("Have a good day!")
+
